@@ -4,11 +4,11 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Search Image</title>
+    <title>Images search</title>
     <link rel="icon" href="/src/images/favicon.png" type="image/x-icon" />
   </head>
   <body>
-    <section>
+    <section class="section">
       <div class="container">
         <form class="search-form" id="search-form">
           <input
@@ -16,14 +16,12 @@
             type="text"
             name="searchQuery"
             autocomplete="off"
-            placeholder="Search images..."
+            placeholder="Please type text..."
           />
           <button type="submit" class="search-button">Search</button>
         </form>
 
-        <div class="gallery">
-          <!-- Карточки изображений -->
-        </div>
+        <div class="gallery"></div>
         <button type="button" class="load-more load-more--modif is-hidden">
           Load more
         </button>

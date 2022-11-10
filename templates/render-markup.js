@@ -12,19 +12,19 @@ export function renderMarkup(images) {
         comments,
         downloads,
       }) => {
-        return `  <a class ='photo-link' href = "${largeImageURL}"> <div class="photo-card">
-  <img class="gallery-img" src="${webformatURL}" alt="${tags}  loading="lazy" />
+        return `  <a class ='photo-link' target="_blank" href="${largeImageURL}"><div class="photo-card">
+  <img class="img" src="${webformatURL}" alt="${tags}  loading="lazy" />
   <div class="info">
-    <p class="info-item">
+    <p class="info__text">
       <b>Likes: ${likes}</b>
     </p>
-    <p class="info-item">
+    <p class="info__text">
       <b>Views: ${views}</b>
     </p>
-    <p class="info-item">
+    <p class="info__text">
       <b>Comments: ${comments}</b>
     </p>
-    <p class="info-item">
+    <p class="info__text">
       <b>Downloads: ${downloads}</b>
     </p>
   </div>

@@ -2,8 +2,6 @@ import './sass/main.scss';
 import { renderMarkup } from '../templates/render-markup';
 import { jsonPlaceholderAPI } from '../templates/placeholder-api';
 import { Notify } from 'notiflix/build/notiflix-notify-aio';
-// import SimpleLightbox from 'simplelightbox';
-// import 'simplelightbox/dist/simple-lightbox.min.css';
 
 const form = document.querySelector('#search-form');
 const divGallery = document.querySelector('.gallery');
@@ -11,7 +9,6 @@ const btnLoadMore = document.querySelector('.load-more');
 
 const jsonPlaceholderApi = new jsonPlaceholderAPI();
 const totalPages = jsonPlaceholderApi.getTotalPages();
-// const lightbox = new SimpleLightbox('.gallery photo-link');
 
 btnLoadMore.addEventListener('click', onButtonClick);
 form.addEventListener('submit', onFormSubmit);
