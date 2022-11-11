@@ -19,3 +19,4 @@
 #### When you click on the image, the user throws a larger image into a new window.
 
 ![images](./src/images/images-search.jpg)
+
